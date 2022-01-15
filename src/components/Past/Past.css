@@ -10,12 +10,11 @@ main {
 
 .past-heading {
     color: rgb(33, 71, 88);
-    text-shadow: 2px 2px #5eaccf;
+    text-shadow: 2px 2px #549abb;
     margin-bottom: 0;
 }
 
 .past-title {
-    margin-top: 6rem;
     color: rgb(50, 107, 124);
     text-shadow: 1px 1px #99acb4;
 } 
@@ -36,4 +35,6 @@ main {
 .dashed {
     outline-style: dashed;
     color: #2f3233;
+    margin-top: 3rem;
+    margin-bottom: 7rem;
 }

@@ -48,7 +48,7 @@ function Past() {
                             marginTop: 0,
                             marginLeft: '70rem',
                             width: 'fit-content',
-                            color: 'teal'
+                            color: 'Teal'
                         }}>
                         
                         <FormControlLabel
