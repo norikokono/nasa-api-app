@@ -9,6 +9,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 import Stars from '@material-ui/icons/Stars';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 
+import Search from './../../components/Search/Search';
 
 const apiKey = process.env.REACT_APP_NASA_KEY;
 
@@ -62,6 +63,8 @@ function Past() {
                         <p class="dashed"></p>
                     </div>
                 ))}
+
+                <Search />
             </main>
         </>
     )
