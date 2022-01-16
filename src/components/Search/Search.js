@@ -12,7 +12,6 @@ class Search extends Component {
     photo: ""
   };
   
-
   componentDidMount() {
     fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`)
       .then(response => response.json())
@@ -35,7 +34,7 @@ class Search extends Component {
 render() {
     return (
       <div>
-        <h3>Search by Date</h3>
+        <h2>Astronomy Picture of the Day: Search by Date</h2>
         <DateInput
           changeDate={this.changeDate}
           date={this.state.date}
