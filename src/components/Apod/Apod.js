@@ -58,7 +58,7 @@ export default function Apod() {
         
           {/* Like Button */}
           <div style={{
-            // margin: 'auto',
+            paddingTop: '5rem',
             marginTop: '30rem',
             display: 'block',
             width: 'fit-content'

@@ -1,0 +1,16 @@
+.photo-title {
+font-size: 1.5rem;
+margin-top: 6rem;
+}
+
+.photo-explanation {
+    margin: 1.5rem 8rem;
+}
+
+.photo-date {
+    color: #9e5d5d;
+}
+
+.photo-copyright {
+    color: #9e5d5d;
+}

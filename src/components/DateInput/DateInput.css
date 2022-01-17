@@ -1,0 +1,36 @@
+.dateInput-button {
+    padding: 3px 8px;
+    background-color: rgb(202, 95, 87);
+    border: 1px solid rgb(230, 4, 128);
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-left: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.dateInput-button:hover {
+    background-color: rgb(180, 70, 76);
+}
+
+
+/* https://stackoverflow.com/questions/14946091/are-there-any-style-options-for-the-html5-date-picker */
+
+input[type="date"] {
+    background-color: rgb(233, 205, 209);
+  }
+  
+  input[type="date"]::-webkit-clear-button {
+    font-size: 18px;
+    height: 30px;
+    position: relative;
+  }
+  
+  input[type="date"]::-webkit-inner-spin-button {
+    height: 28px
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    font-size: 15px;
+  }
+  

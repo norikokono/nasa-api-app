@@ -3,6 +3,7 @@
 import React, { Component } from "react";
 import DateInput from "../../components/DateInput/DateInput";
 import Photo from "../../components/Photo/Photo";
+import "./Search.css";
 
 const apiKey = process.env.REACT_APP_NASA_KEY;
 
@@ -34,7 +35,7 @@ class Search extends Component {
 render() {
     return (
       <div>
-        <h2>Astronomy Picture of the Day: Search by Date</h2>
+        <h2 className="search-heading">Astronomy Picture of the Day: Search by Date</h2>
         <DateInput
           changeDate={this.changeDate}
           date={this.state.date}
