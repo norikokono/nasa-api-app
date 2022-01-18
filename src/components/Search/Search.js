@@ -41,6 +41,7 @@ render() {
           date={this.state.date}
         />
         <Photo photo={this.state.photo} />
+        
       </div>
     );
   }
