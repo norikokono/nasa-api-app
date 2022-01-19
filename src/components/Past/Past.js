@@ -41,7 +41,25 @@ function Past() {
                     <div className="past-container" key={item.id}>
                         <h2 className="past-title">{item.title}</h2>
                         <h3 className="past-data">{item.date}</h3>
-                        <img src={item.url} alt={item.title} className="image" />
+                        
+                        {/* <img src={item.url} alt={item.title} className="image" /> */}
+                        {item.media_type === "image" ? (
+                        <img
+                            src={item.url}
+                            alt={item.title}
+                            className="photo"
+                        />
+                        ) : (
+                        <iframe
+                            title="space-video"
+                            src={item.url}
+                            frameBorder="0"
+                            allow="autoplay"
+                            allowFullScreen
+                            className="photo"
+                        />
+                        )}
+
                         <p className="past-explanation">{item.explanation}</p>
                         
                         {/* Like Button */}
