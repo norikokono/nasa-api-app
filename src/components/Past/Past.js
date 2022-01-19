@@ -47,7 +47,7 @@ function Past() {
                         <img
                             src={item.url}
                             alt={item.title}
-                            className="photo"
+                            className="image"
                         />
                         ) : (
                         <iframe
@@ -56,7 +56,7 @@ function Past() {
                             frameBorder="0"
                             allow="autoplay"
                             allowFullScreen
-                            className="photo"
+                            className="image"
                         />
                         )}
 
