@@ -35,6 +35,7 @@ class Search extends Component {
 render() {
     return (
       <div>
+        <iframe src="https://giphy.com/embed/gkgwQkzP3lN5u" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen title="NASA GIF"></iframe><p><a href="https://giphy.com/gifs/nasa-nasagif-gkgwQkzP3lN5u">via GIPHY</a></p>
         <h2 className="search-heading">Astronomy Picture of the Day: Search by Date</h2>
         <DateInput
           changeDate={this.changeDate}
