@@ -2,10 +2,12 @@
 
 import React from "react";
 import { useEffect, useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Apod from "./components/Apod/Apod";
 import Past from "./components/Past/Past";
+import Mars from "./components/Mars/Mars";
+import NotFound from "./NotFound/NotFound";
 import "./App.css";
 
 const App = () => {
@@ -40,6 +42,9 @@ const App = () => {
           <Route element={<Home />} path="/" exact />
           <Route element={<Apod />} path="/apod" />
           <Route element={<Past />} path="/past" />
+          <Route element={<Mars />} path="/mars" />
+          <Route element={<Navigate to="/" /> } path="*" />
+          <Route component={NotFound} />
         </Routes>
       </div>
     </BrowserRouter>

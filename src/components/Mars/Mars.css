@@ -1,0 +1,45 @@
+main {
+    text-align: center;
+    color: rgb(33, 126, 126);
+}
+
+li img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(7, 82, 94, 0.1) 0px 10px 50px;
+    margin: 2rem;
+}
+
+/* https://stackoverflow.com/questions/54530946/css-vertical-position-of-numbering-in-ordered-list */
+ol { 
+    list-style: none; /* removes the current list numbers */
+    counter-reset: list; /* creates a new counter */
+  }
+  
+  li { 
+    position: relative; /* make relative, so we can position the number absolutely */
+  }
+  
+  li:before {
+    counter-increment: list; /* increment the counter by 1 */
+    content: counter(list)'.'; /* output the counter, with a dot at the end */
+    position: absolute; /* the rest is positioning and styling */
+    margin-right: 5px;
+    top: 0;
+  }
+
+.mars-button {
+  color:aliceblue;
+  background-image: linear-gradient(to right, rgb(81, 102, 148) , rgb(35, 147, 161));
+  border: none;
+  border-radius: 1rem;
+  padding: 10px;
+}
+
+.mars-button:focus {    
+  color: rgb(53, 50, 50);
+  background:rgb(46, 46, 46); 
+  padding: 0;
+  opacity: 0.65;
+}
