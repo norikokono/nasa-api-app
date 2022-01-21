@@ -6,7 +6,7 @@ import NavBar from "../NavBar";
 const apiKey = process.env.REACT_APP_NASA_KEY;
 
 const Mars = () => {
-  const [data, setData] = useState([])
+  const [data, setData] = useState([]);
 
   const handleFetch = async () => {
     const response = await fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=${apiKey}`, {
@@ -18,9 +18,9 @@ const Mars = () => {
       return arrayItem.img_src
     }))
   }
-  
+
   return (
-    <main>
+    <main className="mars">
       <NavBar />
       <div className="mars-app">
         <h1>Mars rover images</h1>
