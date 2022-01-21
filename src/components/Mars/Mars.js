@@ -28,7 +28,7 @@ const Mars = () => {
       
         <ol>
           {data && 
-            data.map((temp, index,i) => {
+            data.map((temp, index) => {
               return (
                 <li key={index}>
                   <img src={temp} alt="" />
